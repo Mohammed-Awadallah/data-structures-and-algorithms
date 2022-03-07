@@ -4,6 +4,8 @@
 
 [click here to vire readme file for challenge02](https://github.com/Mohammed-Awadallah/data-structures-and-algorithms/blob/main/javascript/array-insert-shift/README.MD)
 
+[click here to view readme file for challenge05 && 06](https://github.com/Mohammed-Awadallah/data-structures-and-algorithms/blob/main/javascript/linked-list/README.MD)
+
 ## Language: `JavaScript`
 
 ### Folder and Challenge Setup
