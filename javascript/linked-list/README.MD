@@ -1,32 +1,51 @@
 # Singly Linked List
+
 A linked list is a sequence of data structures, which are connected together via links. Linked List is a sequence of links which contains items. Each link contains a connection to another link. Linked list is the second most-used data structure after array.
 
+  
+
 ## Challenge
+
 ### Node
-Create a Node class that has properties for the value stored in the Node, and a pointer to the next Node.
+
+* Create a Node class that has properties for the value stored in the Node, and a pointer to the next Node.
+
 ### Linked List
-Create a Linked List class
-Within your Linked List class, include a head property.
-Upon instantiation, an empty Linked List should be created.
-The class should contain the following methods
-insert
-Arguments: value
-Returns: nothing
-Adds a new node with that value to the head of the list with an O(1) Time performance.
-includes
-Arguments: value
-Returns: Boolean
-Indicates whether that value exists as a Node’s value somewhere within the list.
-to string
-Arguments: none
-Returns: a string representing all the values in the Linked List, formatted as:
-"{ a } -> { b } -> { c } -> NULL"
+
+ - create linked list class
+ - create append method
+ - create insertBefore method
+ - create insertAfter method
+ - create includes method
+ - create insert method
+ - create toString method
+
+  
 
 ## Approach & Efficiency
-LinkedList is that insertions and deletion can be done very quickly.
-If you just want to insert an element right to the beginning of the LinkedList, that can be done in constant time O(1).
-If you want to delete an element at the beginning of a LinkedList, again constant time O(1).
+
+### Big O 
+
+ 1. Append has O(_1_) since i used tail pointer
+ 2. insertBefore has O(_n_) because of while loop
+ 3. insertAfter has O(_n_) because of while loop
+ 4. includes has   O(_n_) because of while loop
+ 5. insert has O(_1_) because of no loop
+ 6. toString has O(_n_) because of while loop
+
+  
 
 ## API
-All of the reading i did was from  
-https://blog.devgenius.io/javascript-linked-lists-create-a-linkedlist-class-api-insert-first-c309f41b24ca
+
+All of the reading i did was from
+
+* [devgenius](https://blog.devgenius.io/javascript-linked-lists-create-a-linkedlist-class-api-insert-first-c309f41b24ca)
+* [toolsqa](https://www.toolsqa.com/data-structures/linked-list-in-data-structures/)
+
+
+## Whiteboard : 
+##### Append
+
+![Append](https://i.ibb.co/C5j3z5K/append.png)
+##### insertAfter
+![insert After](https://i.ibb.co/fp5fph0/insert-After.png)

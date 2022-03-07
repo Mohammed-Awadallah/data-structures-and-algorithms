@@ -17,16 +17,16 @@ class LinkedList {
             node.next = this.head;
             this.head = node;
         }
-       
+
     }
 
     includes(value) {
         if (!this.head) return false;
         let node = this.head;
-        if (node.value === value) {return true;}
+        if (node.value === value) { return true; }
         while (node.next) {
             node = node.next;
-            if (node.value === value) {return true;}
+            if (node.value === value) { return true; }
         }
         return false;
     }
@@ -44,7 +44,59 @@ class LinkedList {
         return Result;
     }
 
+    append(value) {
+        const newNode = new Node(value);
+        if (!this.head) {
+            this.head = newNode
+            this.tail = this.head;
+        } else {
+            this.tail.next = newNode;
+            this.tail = newNode;
+        }
+    }
 
+    insertAfter(value, newValue) {
+        let node = new Node(newValue);
+        if (this.head) {
+            if (this.tail.value === value) {
+                this.tail.next = node;
+                this.tail = node;
+                return;
+            }
+            let checkedNode = this.head;
+            while (checkedNode) {
+                if (checkedNode.value === value) {
+                    let temp = checkedNode.next;
+                    checkedNode.next = node;
+                    node.next = temp;
+                    return;
+                }
+                checkedNode = checkedNode.next;
+            }
+        }
+        return "there is no such value!";
+    }
+    insertBefore(value, newValue) {
+        let node = new Node(newValue);
+        if (this.head) {
+            if (this.head.value === value) {
+                node.next = this.head;
+                this.head = node;
+                return;
+            }
+            let checkedNode = this.head;
+            while (checkedNode.next) {
+                if (checkedNode.next.value === value) {
+                    let holdNode = checkedNode.next;
+                    checkedNode.next = node;
+                    node.next = holdNode;
+                    return;
+                }
+                checkedNode = checkedNode.next;
+            }
+        }
+        return "there is no such value!";
+    }
 }
 
 module.exports = LinkedList;
