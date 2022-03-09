@@ -6,6 +6,7 @@ class LinkedList {
     constructor() {
         this.head = null;
         this.tail = null;
+        this.length = 0;
     }
 
     insert(value) {
@@ -53,6 +54,7 @@ class LinkedList {
             this.tail.next = newNode;
             this.tail = newNode;
         }
+        this.length += 1;
     }
 
     insertAfter(value, newValue) {
@@ -96,6 +98,19 @@ class LinkedList {
             }
         }
         return "there is no such value!";
+    }
+    kthFromEnd(k) {
+        if (typeof k !== 'number' || k < 0 || !Number.isInteger(k)) return 'Exception not valid Number';
+        if (this.head) {
+            if (this.length === 1 && k === 0) return this.head.value;
+            if (k < this.length) {
+                let checkedNode = this.head;
+                for (let i = 1; i < this.length - k; i++) {
+                    checkedNode = checkedNode.next;
+                }
+                return checkedNode.value;
+            }
+        } return "Exception empty LL or more than the length";
     }
 }
 
