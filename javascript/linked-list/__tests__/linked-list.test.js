@@ -57,6 +57,25 @@ describe('linked-list-insertions', () => {
     expect(newLinkedList.insertAfter(225, 4854)).toBe('there is no such value!');
   });
 });
+describe('kFromEnd', () => {
+  it(' find k value in a ll', () => {
+    expect(newLinkedList.kthFromEnd(0)).toEqual('B');
+    expect(newLinkedList.kthFromEnd(1)).toEqual('A');
+  });
+  it('find k value in a ll of a size 1', () => {
+    let testList = new LinkedLilst();
+    testList.append(3);
+    expect(testList.kthFromEnd(0)).toEqual(3);
+    expect(testList.kthFromEnd(1)).toEqual('Exception empty LL or more than the length');
+  });
+  it(' if the value is not valid', () => {
+    expect(newLinkedList.kthFromEnd(1.7)).toEqual('Exception not valid Number');
+    expect(newLinkedList.kthFromEnd(-1)).toEqual('Exception not valid Number');
+  });
+  it(' if the value is more than the length ', () => {
+    expect(newLinkedList.kthFromEnd(12)).toEqual('Exception empty LL or more than the length');
+  });
+});
 
 
 

@@ -20,8 +20,7 @@ A linked list is a sequence of data structures, which are connected together via
  - create includes method
  - create insert method
  - create toString method
-
-  
+ - create kthFromEnd method
 
 ## Approach & Efficiency
 
@@ -33,8 +32,7 @@ A linked list is a sequence of data structures, which are connected together via
  4. includes has   O(_n_) because of while loop
  5. insert has O(_1_) because of no loop
  6. toString has O(_n_) because of while loop
-
-  
+ 7. kthFromEnd has O(_1_) because of loop
 
 ## API
 
@@ -50,3 +48,5 @@ All of the reading i did was from
 ![Append](https://i.ibb.co/C5j3z5K/append.png)
 ##### insertAfter
 ![insert After](https://i.ibb.co/fp5fph0/insert-After.png)
+##### kthFromEnd
+![kthFromEnd](https://i.ibb.co/G3Vw1L1/capture.png)
