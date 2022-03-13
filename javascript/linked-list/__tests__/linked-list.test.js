@@ -1,6 +1,7 @@
 'use strict';
 
-const LinkedLilst = require('../index');
+const LinkedLilst  = require('../index');
+const zipLists = require('../zippedList')
 let linkedList = new LinkedLilst();
 let newLinkedList = new LinkedLilst();
 
@@ -76,6 +77,18 @@ describe('kFromEnd', () => {
     expect(newLinkedList.kthFromEnd(12)).toEqual('Exception empty LL or more than the length');
   });
 });
+
+describe('zippedList', () => {
+  let emptyList = new LinkedLilst();
+  it('testing if zipped ', () => {
+    expect(zipLists(linkedList, newLinkedList).toString()).toBe( "{ A } -> { A } -> { 1 } -> { B } -> NULL");
+    expect(zipLists(newLinkedList, linkedList).toString()).toBe("{ A } -> { A } -> { B } -> { 1 } -> NULL");
+  });
+  it('testing if 1 is empty linked list', () => {
+    expect(zipLists(newLinkedList, emptyList).toString()).toEqual(newLinkedList.toString());
+  });
+});
+
 
 
 

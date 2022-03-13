@@ -21,18 +21,36 @@ A linked list is a sequence of data structures, which are connected together via
  - create insert method
  - create toString method
  - create kthFromEnd method
+ - created zippedList function
 
 ## Approach & Efficiency
 
 ### Big O 
 
- 1. Append has O(_1_) since i used tail pointer
- 2. insertBefore has O(_n_) because of while loop
- 3. insertAfter has O(_n_) because of while loop
- 4. includes has   O(_n_) because of while loop
- 5. insert has O(_1_) because of no loop
- 6. toString has O(_n_) because of while loop
- 7. kthFromEnd has O(_1_) because of loop
+- append has
+   * time : O(n)
+   * space : O(1)
+- insert has
+   * time : O(n)
+   * space : O(1)
+- insertBefore has
+   * time : O(n)
+   * space : O(1)
+- insertAfter has
+   * time : O(n)
+   * space : O(1)
+- toString has
+   * time : O(n)
+   * space : O(1)
+- includes has
+   * time : O(n)
+   * space : O(1)
+- kthFromEnd has
+   * time : O(n)
+   * space : O(1)
+- zipLists has
+   * time : O(n)
+   * space : O(n)
 
 ## API
 
@@ -50,3 +68,5 @@ All of the reading i did was from
 ![insert After](https://i.ibb.co/fp5fph0/insert-After.png)
 ##### kthFromEnd
 ![kthFromEnd](https://i.ibb.co/G3Vw1L1/capture.png)
+##### zippedList
+![zippedList](https://i.ibb.co/p3TQC6J/Capture.png)
