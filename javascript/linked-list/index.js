@@ -18,7 +18,7 @@ class LinkedList {
             node.next = this.head;
             this.head = node;
         }
-
+        
     }
 
     includes(value) {
@@ -113,5 +113,6 @@ class LinkedList {
         } return "Exception empty LL or more than the length";
     }
 }
+
 
 module.exports = LinkedList;
