@@ -2,8 +2,7 @@
 
 A linked list is a sequence of data structures, which are connected together via links. Linked List is a sequence of links which contains items. Each link contains a connection to another link. Linked list is the second most-used data structure after array.
 
-  ## links 
-  Pull Request : [click here](https://github.com/Mohammed-Awadallah/data-structures-and-algorithms/pull/5)
+  
 
 ## Challenge
 
@@ -22,6 +21,7 @@ A linked list is a sequence of data structures, which are connected together via
  - create toString method
  - create kthFromEnd method
  - created zippedList function
+ - created isPalindrome function
 
 ## Approach & Efficiency
 
@@ -51,6 +51,9 @@ A linked list is a sequence of data structures, which are connected together via
 - zipLists has
    * time : O(n)
    * space : O(n)
+-isPalindrome has
+   * time : O(n)
+   * space : O(1)
 
 ## API
 
@@ -62,7 +65,6 @@ All of the reading i did was from
 
 ## Whiteboard : 
 ##### Append
-
 ![Append](https://i.ibb.co/C5j3z5K/append.png)
 ##### insertAfter
 ![insert After](https://i.ibb.co/fp5fph0/insert-After.png)
@@ -70,3 +72,5 @@ All of the reading i did was from
 ![kthFromEnd](https://i.ibb.co/G3Vw1L1/capture.png)
 ##### zippedList
 ![zippedList](https://i.ibb.co/p3TQC6J/Capture.png)
+##### isPalindrome
+![isPalindrome](https://i.ibb.co/0tgQJw5/Capture.png)

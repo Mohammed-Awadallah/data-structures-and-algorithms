@@ -2,6 +2,7 @@
 
 const LinkedLilst  = require('../index');
 const zipLists = require('../zippedList')
+const isPalindrome = require('../isPalindrom');
 let linkedList = new LinkedLilst();
 let newLinkedList = new LinkedLilst();
 
@@ -86,6 +87,22 @@ describe('zippedList', () => {
   });
   it('testing if 1 is empty linked list', () => {
     expect(zipLists(newLinkedList, emptyList).toString()).toEqual(newLinkedList.toString());
+  });
+
+  describe('is palindrome test',()=>{
+   let palindrome1 = new LinkedLilst();
+   palindrome1.append("a");
+   palindrome1.append("b");
+   palindrome1.append("a");
+   let palindrome2 = new LinkedLilst();
+   palindrome2.append("a");
+   palindrome2.append("b");
+   palindrome2.append("b");
+
+   it('testing palindrom', () => {
+   expect(isPalindrome(palindrome1)).toEqual(true);
+   expect(isPalindrome(palindrome2)).toEqual(false);
+  })
   });
 });
 
