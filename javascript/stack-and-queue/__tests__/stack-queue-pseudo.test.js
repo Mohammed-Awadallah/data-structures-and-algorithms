@@ -18,4 +18,5 @@ describe('PseudoQueue Test', () => {
         test.enqueue(x2);
         expect(test.dequeue()).toEqual('A');
     });
+
 });
