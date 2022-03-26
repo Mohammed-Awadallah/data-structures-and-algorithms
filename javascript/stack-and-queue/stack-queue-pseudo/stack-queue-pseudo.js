@@ -1,14 +1,12 @@
 'use strict';
 
 const Stack = require('../stack/stack');
-
 class stackQueue {
     constructor() {
         this.front = new Stack();
         this.rear = new Stack();
         this.length = 0;
     }
-
     enqueue(x) {
         this.rear.push(x);
         this.length++;
