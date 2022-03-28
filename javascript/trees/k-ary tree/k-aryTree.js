@@ -17,7 +17,8 @@ class karyTree {
                     node.child = newNode;
                     this.length++;
                 }
-                addRecursion(node.child);
+                
+                else{addRecursion(node.child);}
             }
         };
         addRecursion(this.root);
