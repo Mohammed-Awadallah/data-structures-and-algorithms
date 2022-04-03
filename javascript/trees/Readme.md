@@ -29,3 +29,9 @@ all my reads were from :
 * [engrxiv Archive](https://engrxiv.org/preprint/view/2094/)
 * [hawaii education](http://www2.hawaii.edu/~suthers/courses/ics311f20/Notes/Topic-08.html)
 * [study.com](https://study.com/academy/lesson/binary-trees-applications-implementation.html)
+
+
+## Whiteboards 
+
+### BreadthFirst 
+![breadth](https://i.ibb.co/Bq8pT6K/Capture.png)
