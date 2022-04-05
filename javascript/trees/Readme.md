@@ -20,6 +20,7 @@
 - postOrder: space O(n)/time O(n)
 - getMax: space O(n)/time O(n)
 - breadth: space O(n)/time O(n)
+- fizzbuzz: space O(n^2)/time O(n)
 ### BinarySearchTree
 - add: space O(1)/time O(n)
 - contains: space O(1)/time O(n)
@@ -35,3 +36,6 @@ all my reads were from :
 
 ### BreadthFirst 
 ![breadth](https://i.ibb.co/Bq8pT6K/Capture.png)
+
+### FizzBuzzTree
+![fizzbuzz](https://i.ibb.co/F0TWXYJ/Capture.png)
