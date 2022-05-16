@@ -25,8 +25,8 @@
 
 
 ## BIG O
-set: space O(1)/time O(1)
-hash: space O(1)/time O(1)
-contains: space O(1)/time O(1) - time O(n) if there is a collision
-get: space O(1)/time O(1) - time O(n) if there is a collision
+              set: space O(1)/time O(1)
+              hash: space O(1)/time O(1)
+              contains: space O(1)/time O(1) - time O(n) if there is a collision
+              get: space O(1)/time O(1) - time O(n) if there is a collision
 
