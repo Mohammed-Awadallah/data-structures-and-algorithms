@@ -6,26 +6,26 @@ const { Graph, Vertex } = require('../graph');
 
 let graph = new Graph();
 
-let one = new Vertex(1);
-let two = new Vertex(2);
-let three = new Vertex(3);
-let four = new Vertex(4);
+let first = new Vertex(1);
+let second = new Vertex(2);
+let third = new Vertex(3);
+let fourth = new Vertex(4);
 
 describe("Graph test", () => {
     test("Node can be successfully added to the graph", () => {
-        graph.addVertix(one);
+        graph.addVertix(first);
         expect(graph.list.size).toBe(1);
     })
 
     test("A collection of all nodes can be properly retrieved from the graph", () => {
-        graph.addVertix(one)
-        graph.addVertix(two)
+        graph.addVertix(first)
+        graph.addVertix(second)
         expect(graph.getNodes()).toMatchObject([{ value: 1 }, { value: 2 }])
     })
 
     test("An edge can be successfully added to the graph", () => {
-        graph.addDirectedEdge(one, two)
-        expect(graph.list.get(one)).toMatchObject([
+        graph.addDirectedEdge(first, second)
+        expect(graph.list.get(first)).toMatchObject([
             { vertex: { value: 2 }, weight: 0 },
         ])
     })
@@ -33,20 +33,20 @@ describe("Graph test", () => {
 
 
     test("All appropriate neighbors can be retrieved from the graph, weight included", () => {
-        expect(graph.getNeighbors(one)).toMatchObject([
+        expect(graph.getNeighbors(first)).toMatchObject([
             { vertex: { value: 2 }, weight: 0 },
         ])
     })
 
     test("The proper size is returned, representing the number of nodes in the graph", () => {
-        graph.addVertix(three)
-        graph.addVertix(four)
+        graph.addVertix(third)
+        graph.addVertix(fourth)
         expect(graph.getSize()).toBe(4)
     })
 
     test("A graph with only one node and edge can be properly returned", () => {
 
-        graph.addDirectedEdge(three)
+        graph.addDirectedEdge(third)
         expect(graph.list.size).toBe(4)
     })
 
