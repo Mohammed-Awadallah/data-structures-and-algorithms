@@ -25,8 +25,27 @@ size
 Arguments: none
 Returns the total number of nodes in the graph
 
+## breadth first 
+### Challenge
+Write the following method for the Graph class:
+
+breadth first
+Arguments: Node
+Return: A collection of nodes in the order they were visited.
+Display the collection
+
+## approach & effeciency
+Time Complexity: O(V+E), where V is the number of nodes and E is the number of edges.
+Auxiliary Space: O(V)
+
+## Visualization
+
+![breadth](visual.png)
 
 
 ## API
 * https://www.30secondsofcode.org/articles/s/js-data-structures-graph
 * https://learnersbucket.com/tutorials/data-structures/javascript-graph-data-structure/
+
+
+

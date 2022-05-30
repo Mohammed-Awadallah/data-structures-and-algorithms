@@ -59,7 +59,28 @@ class Graph {
     getSize() {
         return this.list.size > 0 ? this.list.size : null;
     }
+    breadthFirstSearch(startVertex, endVertex) {
+    startVertex = this.list.get(startVertex);
+    endVertex = this.list.get(endVertex);
+    let queue = [];
+    let visited = [];
+    let path = [];
+    queue.push(startVertex);
+    while (queue.length > 0) {
+        let current = queue.shift();
+        visited.push(current);
+        if (current === endVertex) {
+            path.push(current);
+            break;
+        }
+        for (let i = 0; i < current.length; i++) {
+            if (visited.indexOf(current[i]) === -1) {
+                queue.push(current[i]);
+            }
+        }
+    }
 
+}
 }
 
 module.exports = { Graph, Vertex };
