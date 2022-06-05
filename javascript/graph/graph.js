@@ -81,6 +81,27 @@ class Graph {
     }
 
 }
+depthFirstSearch(startVertex, endVertex) {
+    startVertex = this.list.get(startVertex);
+    endVertex = this.list.get(endVertex);
+    let stack = [];
+    let visited = [];
+    let path = [];
+    stack.push(startVertex);
+    while (stack.length > 0) {
+        let current = stack.pop();
+        visited.push(current);
+        if (current === endVertex) {
+            path.push(current);
+            break;
+        }
+        for (let i = 0; i < current.length; i++) {
+            if (visited.indexOf(current[i]) === -1) {
+                stack.push(current[i]);
+            }
+        }
+    }
+}
 }
 
 module.exports = { Graph, Vertex };
